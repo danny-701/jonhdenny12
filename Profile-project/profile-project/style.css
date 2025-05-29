@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-image: url(/image/bg/2.jpeg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container{
+    background-color: rgba(128, 128, 128, 0.199);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+    position: relative;
+}
+
+.header h1{
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    position: fixed;
+    padding-top: 20px;
+}
+
+h1 span{
+    padding-left: 100px;
+    color: orange;
+}
+
+.profile-image img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav .nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 20px;
+    position: relative;
+    visibility: fixed;
+}
+.Title{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Title i{
+    font-size: 30px;
+}
+nav .nav-items a{
+    color: #fff;
+    /* transition: color 0.3s ease; */
+}
+
+.menu-drowdown{
+    position: absolute;
+    visibility: hidden;
+    left: 20px;
+    font-size: 20px;
+    width: 250px;
+    height: fit-content;
+}
+.menu-drowdown li a{
+    color: #fff;
+}
+.menu-drowdown li a:hover{
+    color: orange;
+    font-size: 25px;
+}
+.nav-items:hover .menu-drowdown{
+    visibility: visible;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #ffffff1a;
+}
+
+/* main-contain */
+
+.main-container{
+    width: 100%;
+    height: 600px;
+}
+
+.Top-contain{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.About-Me{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.About-Me .line{
+    width: 100%;
+    height: 4.5px;
+    background-color: #fff;
+    margin-top: 18px;
+
+}
+.About-Me img{
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.About-Me img:hover{
+    transform: scale(1.2);
+}
+.About-Me .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.About-Me h1{
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    text-decoration: underline;
+}
+
+
+.About-Me .title{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title .Card-1{
+    width: 600px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.0100);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 25px;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.title .Card-1:hover{
+    background-color: yellowgreen;
+    transform: scale(1.2);
+}
+
+.Card-1 a{
+    color: orange;
+    font-weight: bold;
+}
+
+.title .Card-2{
+    width: 600px;
+    height: 200px;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 25px;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.Card-2 a{
+    color: orange;
+    font-weight: bold;
+}
+.title .Card-2:hover{
+    background-color: yellowgreen;
+    transform: scale(1.2);
+}
+
+/* My skill */
+
+.My-Skill{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.My-Skill .card-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 20px;
+}
+
+/* card-1 */
+.card-item .item-1{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+    padding: 20px;
+}
+.item-1 .t-2{
+    color:orange;
+}
+.item-1 .t-1{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.item-1 img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
+/* card-2 */
+.card-item .item-2{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+    padding: 20px;
+}
+.item-2 .t-2{
+    color:orange;
+}
+.item-2 .t-1{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.item-2 img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
+/* card-3 */
+.card-item .item-3{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+    padding: 20px;
+}
+.item-3 .t-2{
+    color:orange;
+}
+.item-3 .t-1{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.item-3 img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
+
+
+
+.My-Skill h1{
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    text-decoration: underline;
+}
+.My-Skill .line{
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+
+.My-Skill .title{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Khmer OS Siemreap', sans-serif;
+}
+
+
+/* Contact */
+
+.contact{
+   width: 100%;
+   height: 230px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+}
+
+.contact .line{
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'poppins' ,sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
+.item a{
+    color: #fff;
+}
+.item i{
+    color: blue !important;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .body{
+        background-image: none;
+    }
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        margin-bottom: 20%;
+    }
+    .profile-image img{
+        width: 120px;
+        height: 120px;
+    }
+    nav .nav-items{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main-container{
+        flex-direction: column;
+        padding-left: 20px;
+        color: black;
+    }
+    .About-Me{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 30px;
+        padding: 20px;
+    }
+    .About-Me img{
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    
+    .title .Card-1{
+        width: 250px;
+        height: 220px;
+        font-size: 18px ;
+    }
+    .title .Card-2{
+        width: 250px;
+        height: 250px;
+        font-size: 18px ;
+    }
+
+    /* top-contain */
+
+    .Top-contain{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .card-item{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .My-Skill .title{
+        width: 300px;
+        padding: 20px;
+        font-size: 18px;
+        background-color: rgba(24, 116, 153, 0.514);
+        border-radius: 20px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .My-Skill .title:hover{
+        transform: scale(1.2);
+    }
+
+    /* contact */
+    .contact{
+        font-size: 20px;
+    }
+    .item-1 .t-1 , .item-2 .t-1 , .item-3 .t-1{
+        color: black;
+    }
+    .item{
+        width: 300px;
+        font-size: 18px;
+        background-color: yellowgreen;
+        padding: 20px;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+    .item:hover{
+        transform: scale(1.2);
+    }
+}
