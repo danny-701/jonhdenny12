@@ -1,8 +1,6 @@
 # LSTM Time-Series Forecasting
 A hands-on project for forecasting time-series with PyTorch LSTMs. It creates realistic daily data (trend, seasonality, events, noise), prepares it with sliding windows, and trains an LSTM to make multi-step predictions. The project tracks errors with RMSE, MAE, MAPE and shows clear plots of training progress and forecast results.
 
-Deep learning forecasting with **PyTorch LSTMs**. This project generates a synthetic daily time series (trend, seasonality, events, noise), prepares sliding-window datasets, trains an LSTM for **multi-step forecasts**, and evaluates performance with RMSE, MAE, and MAPE. Includes reproducible plots and metrics.
-
 ---
 
 ## Features
